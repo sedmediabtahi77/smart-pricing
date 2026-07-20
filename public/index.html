@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>داشبورد قیمت گذاری</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/estedad-font@v5.0.0/dist/font-face.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- کارت اصلی -->
+
+    <section class="hero">
+
+        <div class="hero-header">
+
+            <div class="villa-info">
+
+                <div class="villa-icon">
+
+                    <img src="logo.png" class="logo">
+
+                </div>
+
+                <div>
+
+                    <div class="villa-name">
+                        ویلای خانوم رضایی
+                    </div>
+
+                    <div class="last-update">
+
+                        آخرین بروزرسانی
+
+                        <span id="lastUpdate"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="price-box">
+
+                <div class="main-price" id="suggestedPrice">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- لیست رقبا -->
+
+    <div id="competitors" class="cards">
+
+    </div>
+
+    <!-- جدول پیش بینی -->
+
+    <section class="forecast-section">
+
+        <div class="forecast-title">
+
+            پیش بینی قیمت ۷ روز آینده
+
+        </div>
+
+        <div class="forecast-wrapper">
+
+            <table class="forecast-table">
+
+                <thead>
+
+                <tr>
+
+                    <th>روز</th>
+
+                    <th>اول</th>
+
+                    <th>دوم</th>
+
+                    <th>سوم</th>
+
+                    <th>چهارم</th>
+
+                    <th>پیشنهادی</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="forecastBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

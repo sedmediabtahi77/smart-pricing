@@ -1,0 +1,411 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Estedad",sans-serif;
+}
+
+body{
+
+    background:#EAF9FE;
+
+    padding:18px;
+
+}
+
+.container{
+
+    max-width:430px;
+
+    margin:auto;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    background:linear-gradient(135deg,#0000F7,#3E63FF);
+
+    border-radius:26px;
+
+    padding:22px;
+
+    box-shadow:0 14px 30px rgba(0,0,247,.16);
+
+    margin-bottom:18px;
+
+}
+
+.hero-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.villa-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.villa-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.logo{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:contain;
+
+}
+
+.villa-name{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.last-update{
+
+    color:#E9ECFF;
+
+    margin-top:6px;
+
+    font-size:13px;
+
+}
+
+.price-box{
+
+    text-align:left;
+
+}
+
+.main-price{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-bottom:26px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.2s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.villa-link{
+
+    text-decoration:none;
+
+    color:#0000F7;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.villa-link:hover{
+
+    opacity:.7;
+
+}
+
+.price{
+
+    color:#0000F7;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+/* ================= FORECAST ================= */
+
+.forecast-section{
+
+    margin-top:16px;
+
+}
+
+.forecast-title{
+
+    color:#0000F7;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+    text-align:center;
+
+}
+
+.forecast-wrapper{
+
+    width:100%;
+
+}
+
+/* ---------- TABLE ---------- */
+
+.forecast-table{
+
+    width:100%;
+
+    border-collapse:separate;
+
+    border-spacing:8px 10px;
+
+}
+
+/* ---------- HEADER ---------- */
+
+.forecast-table thead th{
+
+    border-radius:18px; 
+    
+    background:linear-gradient(135deg,#0000F7,#3E63FF);
+
+    color:#fff;
+
+    padding:14px 12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+/* ---------- ROW ---------- */
+
+.forecast-table tbody tr{
+
+    background:#fff;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+/* ---------- CELLS ---------- */
+
+.forecast-table tbody td{
+
+    background:white;
+
+    padding:16px 12px;
+
+    text-align:center;
+
+    color:#0000F7;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border-radius:14px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    white-space:nowrap;
+
+}
+
+.forecast-table tbody td:first-child{
+
+    font-weight:700;
+
+}
+
+.forecast-table tbody td:last-child{
+
+    font-weight:700;
+
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media(min-width:769px){
+
+    .container{
+
+        max-width:1100px;
+
+    }
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+    .forecast-wrapper{
+
+        overflow-x:auto;
+
+        -webkit-overflow-scrolling:touch;
+
+        padding-bottom:8px;
+
+    }
+
+    .forecast-table{
+
+        min-width:900px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .forecast-title{
+
+        font-size:18px;
+
+    }
+
+}
+
+/* دسکتاپ */
+
+@media(min-width:769px){
+
+    .container{
+
+        max-width:1100px;
+
+    }
+
+}
+
+/* موبایل */
+
+@media(max-width:768px){
+
+    .forecast-wrapper{
+
+        overflow-x:auto;
+
+        -webkit-overflow-scrolling:touch;
+
+        padding-bottom:8px;
+
+    }
+
+    .forecast-table{
+
+        min-width:720px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero{
+
+        padding:18px;
+
+    }
+
+    .villa-name{
+
+        font-size:18px;
+
+    }
+
+    .main-price{
+
+        font-size:18px;
+
+    }
+
+    .villa-link{
+
+        font-size:16px;
+
+    }
+
+    .price{
+
+        font-size:17px;
+
+    }
+
+}
